@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <style>
+        body {
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+        }
+        #main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 720px;
+            width: 100%;
+        }
+        .left {
+            background-image: url(https://static.cdninstagram.com/rsrc.php/v3/y4/r/ItTndlZM2n2.png);
+            height: 600px;
+            width: 430px;
+        }
+        .left img {
+            position: relative;
+            top: 27px;
+            left: 155px
+        }
+        form img {
+            width: 175px;
+        }
+        form {
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            background-color: #ffffff;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 1px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            margin: 20px;
+            width: 348px;
+        }
+        input {
+            margin: 0 0 10px;
+            padding: 9px 0 7px 8px;
+            background-color: #fafafa;
+            border: 1px solid rgb(219,219,219);
+            width: 258px;
+        }
+        .enter {
+            margin: 8px 40px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(0, 149, 246);
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 7px 16px;
+            cursor: pointer;
+            width: 268px;
+        }
+        .or-line {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 40px;
+        }
+        .line {
+            background-color: rgb(219, 219, 219);
+            height: 1px;
+            width: 101px;
+        }
+        .or {
+            font-weight: 600;
+            color: #8E8E8E;
+            padding: 0 20px 0 20px;
+        }
+        #facebook {
+            color: #385185;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            background: none;
+            border: none;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        form a {
+            text-decoration: none;
+            color: rgb(0, 55, 107);
+            font-size: 12px;
+        }
+        #registration {
+            font-size: 14px;
+            text-align: center;
+            padding: 20px 0 20px;
+        }
+        p {
+            text-align: center;
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="left">
+            <img src="inst.png" alt="inst">
+        </div>
+        <div class="right">
+            <form>
+                <img src="inst-logo.png" alt="instagram logo">
+                <div>
+                    <label>
+                        <input type="text" placeholder="Номер телефона, имя пользователя или эл.адрес">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="text" placeholder="Пароль">
+                    </label>
+                </div>
+                <button class="enter" type="submit">Войти</button> <br>
+                <div class="or-line">
+                    <div class="line">
+                    </div>
+                    <div class="or">
+                        или
+                    </div>
+                    <div class="line">
+                    </div>
+                </div>
+                <button id="facebook">
+                    <span><img src="facebook-icon.png" style="width: 16px"></span>
+                    <span>Войти через Facebook</span>
+                </button> <br>
+                <a href="/accounts/password/reset/">Забыли пароль?</a>
+            </form>
+            <form id="registration">
+                <span>У вас еще нет аккаунта? </span>
+                <span><a href="/accounts/emailsignup/" style="color: rgb(0, 149, 246); font-weight: 600; font-size: 14px">Зарегистрироваться</a></span></p>
+            </form>
+            <p>Установите приложение.</p>
+            <div style="text-align: center; margin-top: 20px">
+                <a href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.loginPage.badge&mt=8&vt=lo"><img style="width: 136px" src="down-appstore.png" alt="AppStore"></a>
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.instagram.android%26referrer%3Dutm_source%253Dinstagramweb%2526utm_campaign%253DloginPage%2526ig_mid%253DE9D4EBF1-0B07-4F94-B6C3-894774DCC34F%2526utm_content%253Dlo%2526utm_medium%253Dbadge&e=AT0M2APpZa4_0Whs2extXXbnvTwQlZkIFHjIlQ_g6R21tUkWTbpsW5QVqzNtb33ETW_wj8rir50evLwGNOMVhe-VnDL4maQcP4kLdY-PpL__a6iwhi_6_aje0vuC8vzaOWtSdyBvlwvp_eKdzi3h6ujbPkw"><img style="width: 136px" src="down-googleplay.png" alt="GooglePlay"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

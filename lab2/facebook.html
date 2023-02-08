@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
+    <style>
+        .main {
+            background-color: #f0f2f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 720px;
+            width: 100%;
+        }
+        body {
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .left-bar {
+            width: 500px;
+        }
+        .left-bar img {
+            width: 235px;
+            margin-left: -20px;
+            margin-bottom: -40px;
+        }
+        .left-bar p {
+            font-size: 26px;
+        }
+        .right-bar {
+            text-align: center;
+        }
+        .right-bar input {
+            font-size: 17px;
+            padding: 14px 16px;
+            width: 330px;
+            border: 1px solid #dddfe2;
+            height: 22px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .right-bar input:focus {
+            box-shadow: 0px 0px 1px 1px rgb(22, 111, 229);
+        }
+        .right-bar button {
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            line-height: 48px;
+            padding: 0 16px;
+            width: 332px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+        .right-bar a {
+            color: #1877f2;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .right-bar a:hover {
+            text-decoration: underline;
+        }
+        .right-bar hr {
+            align-items: center;
+            border-bottom: 1px solid #dadde1;
+            display: flex;
+            margin: 20px 16px;
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            width: 396px;
+            margin: 40px 0 0;
+            padding: 20px 0 28px;
+        }
+        .right-bar .cr-acc {
+            cursor: pointer;
+            background-color: #42b72a;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            line-height: 48px;
+            padding: 0 16px;
+            display: inline-block;
+        }
+        .right-bar p a{
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            color: black;
+        }
+        .right-bar p {
+            font-size: 14px;
+            width: 396px;
+            margin-top: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left-bar">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+            <p>Facebook помогает вам всегда ставаться на связи и общаться со своими знакомыми.</p>
+        </div>
+        <div class="right-bar">
+            <form>
+                <div>
+                    <label>
+                        <input type="text" placeholder="Электронный адрес или номер телефона">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="text" placeholder="Пароль">
+                    </label>
+                </div>
+
+                <button type="submit">Вход</button> <br>
+                <a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjc1NjIwMjAxLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&amp;ars=facebook_login">Забыли пароль?</a> <br>
+                <hr>
+                <a class="cr-acc" href="#">Создать новый аккаунт</a>
+            </form>
+            <p> <strong><a href="/pages/create/?ref_type=registration_form">Создать Страницу</a></strong> знаменитости, музыкальной группы или компании.</p>
+        </div>
+    </div>
+    <div class="bottom">
+
+    </div>
+</body>
+</html>
