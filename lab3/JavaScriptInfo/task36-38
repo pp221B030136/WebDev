@@ -1,0 +1,21 @@
+1. The function won't wor differently if 'else' is removed.
+There is no difference in the behavior of these two variants.
+
+2.
+function checkAge(age) {
+  return (age > 18) ? true : confirm('Did parents allow you?');
+}
+
+function checkAge(age) {
+  return (age > 18) || confirm('Did parents allow you?');
+}
+
+3.
+function min(a, b){
+    if (a > b) {
+        return b;
+    } else {
+        return a;
+    }
+}
+

@@ -1,0 +1,43 @@
+1. alert( null || 2 || undefined );
+Result: 2
+
+2. alert( alert(1) || 2 || alert(3) );
+Result: alert(1), 2
+
+3. alert( 1 && null && 2 );
+Result: null
+
+4. alert( alert(1) && alert(2) );
+Result: alert(1), undefined
+
+5. alert( null || 2 && 3 || 4 );
+Result: 3
+
+6. Write an if condition to check that age is between 14 and 90 inclusively.
+Answer: if (age >= 14 && age <= 90)
+
+7. Write an if condition to check that age is NOT between 14 and 90 inclusively.
+Answer: if (age < 14 && age > 90)
+
+8.
+if (-1 || 0) alert( 'first' ); // first
+if (-1 && 0) alert( 'second' ); //
+if (null || -1 && 1) alert( 'third' ); // third
+Answer: the first and the third are going to execute.
+
+9.
+let login = prompt("Who's there?", "");
+if (login == "Admin") {
+    let password = prompt("Password?", "");
+    if (password == "TheMaster"){
+        alert("Welcome!");
+    } else if (password == "" || password == null){
+        alert("Canceled");
+    } else {
+        alert("Wrong password");
+    }
+} else if (login == "" || login == null){
+    alert("Canceled");
+} else {
+    alert("I don't know you");
+}
